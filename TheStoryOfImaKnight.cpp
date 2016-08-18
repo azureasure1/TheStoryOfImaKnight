@@ -22,7 +22,7 @@ int main() {
 	cout << "If Ima fails to rescue the princess safely, however, he will be exiled from the land, never to return, and have his rank of knighthood revoked. ";
 	cout << "If Ima decides not to do this task, he could still remain an ordinary knight." << endl;
 
-	//1st choice
+	//Asks user whether he or she wants to accept King Paul XVIII's task
 	int choiceOne;
 	cout << "What does Ima choose to do?" << endl;
 	cout << "1. Accept King Paul XVIII's task." << endl;
@@ -30,14 +30,14 @@ int main() {
 	cin >> choiceOne;
 	cout << endl;
 
-	//If Ima accepts King Paul XVIII's task
+	//If Ima accepts King Paul XVIII's task, the story continues to the bridge.
 	if (choiceOne == 1) {
 		cout << "Ima makes his way to the castle when he comes a bridge that goes across the Griffin River. ";
 		cout << "A bridge guard stands in the way of the bridge. The guard tells Ima that he must pay 20 shillings to cross the bridge. ";
 		cout << "Ima has enough money to cross the bridge, but he will only be left with 1 shilling left. ";
 		cout << "If he runs into another bridge and a bridge guard is defending that hypothetical bridge, he will not be able to pay to cross." << endl;
 		
-		//2nd choice
+		//Asks user how to respond to the bridge guard
 		int choiceTwo;
 		cout << "What does Ima choose to do?" << endl;
 		cout << "1. Pay the guard." << endl;
@@ -53,7 +53,7 @@ int main() {
 			cout << "Dragonus sees Ima and goes after him. Luckily, Ima is able to enter the castle. However, so does Dragonus.";
 			cout << "Ima is stuck between fighting Dragonus first, or getting the princess to safety first." << endl;
 
-			//3rd Choice
+			//Asks user whether to fight the dragon, or try to rescue the princess
 			int choiceThree;
 			cout << "What does Ima choose to do?" << endl;
 			cout << "1. Fight the dragon first." << endl;
@@ -101,10 +101,12 @@ int main() {
 
 	}//End of choiceOne's 1st option
 
+	//If the user chooses not to accept the king's task
 	else if (choiceOne == 2) {
 		cout << "The king allows you to carry on being a regular knight and Ima keeps living a normal life." << endl;
 	}//End of choiceOne's 2nd option
 
+	//If the user does not choose either of the choices
 	else {
 		cout << "This is not a valid choice." << endl;
 	}
