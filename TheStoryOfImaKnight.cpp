@@ -9,12 +9,15 @@ Program: The Story of Ima Knight
 
 using namespace std;
 
-int escape() {
+//This function allows the program to stay on the screen, then closes the program
+int escape() 
+{
 	cin.get();
 	cin.ignore();
 	return 0;
 }
-int main() {
+int main() 
+{
 	//Prologue
 	cout << "Ima Knight is a knight who wants to be known as the best knight around. ";
 	cout << "One day, he was given a task by King Paul XVIII to rescue her daughter, Princess Julia, who was captured by the evil dragon Dragonus. ";
@@ -31,7 +34,8 @@ int main() {
 	cout << endl;
 
 	//If Ima accepts King Paul XVIII's task, the story continues to the bridge.
-	if (choiceOne == 1) {
+	if (choiceOne == 1) 
+	{
 		cout << "Ima makes his way to the castle when he comes a bridge that goes across the Griffin River. ";
 		cout << "A bridge guard stands in the way of the bridge. The guard tells Ima that he must pay 20 shillings to cross the bridge. ";
 		cout << "Ima has enough money to cross the bridge, but he will only be left with 1 shilling left. ";
@@ -47,7 +51,8 @@ int main() {
 		cout << endl;
 
 		//If Ima pays the guard
-		if (choiceTwo == 1) {
+		if (choiceTwo == 1) 
+		{
 			cout << "The guard allows Ima to cross the bridge, allowing him to go straight to the castle. ";
 			cout << "He sees the large dragon named Dragonus guarding the castle that houses Princess Julia. ";
 			cout << "Dragonus sees Ima and goes after him. Luckily, Ima is able to enter the castle. However, so does Dragonus.";
@@ -62,25 +67,29 @@ int main() {
 			cout << endl;
 
 			//If Ima fights the dragon first
-			if (choiceThree == 1) {
+			if (choiceThree == 1) 
+			{
 				cout << "Ima successfully vanquishes Dragonus after a long and vigorous battle. He rescues the princess and returns home. ";
 				cout << "He is given a hero's welcome by King Paul XVIII and his constituents. He is given the honor of Lead Knight by the king. ";
 				cout << "As soon as Ima is named Lead Knight, Princess Julia kisses him. ";
 				cout << "Years later, they both get married, Ima is named Prince Ima Knight, and they lived happily ever after. The End." << endl;
 			}
 			//If Ima attempts to rescue Princess Julia first
-			else if (choiceThree == 2) {
+			else if (choiceThree == 2) 
+			{
 				cout << "Ima allows Princess Juila to escape the castle by distracting Dragonus, allowing the princess to have a clear path to the exit. ";
 				cout << "However, as valiant as Ima tried, he was unable to defeat Dragonus, and tragically passed away. Princess Julia returns home and explains to her father what happened with Ima. ";
 				cout << "The king announced that Ima would be memorialized with a statue and announced that the day would forever be known as 'Ima Knight Day', in honor of Ima's heroic sacrifice. The End." << endl;
 			}
-			else {
+			else 
+			{
 				cout << "This is not a valid choice." << endl;
 			}
 		}//End of choiceTwo's 1st option
 
 		//If Ima fights the guard
-		else if (choiceTwo == 2) {
+		else if (choiceTwo == 2) 
+		{
 			cout << "Although the battle turns out to be a draw, both Ima and the guard are seriously wounded. ";
 			cout << "Ima reluctantly decides that he will be unable to survive the mission to rescue the princess and returns back home. ";
 			cout << "King Paul XVIII becomes furious when Ima states that he was unable to arrive at the castle, yet alone rescue the princess. ";
@@ -90,7 +99,8 @@ int main() {
 		}// End of choiceTwo's 2nd option
 
 		//If Ima tries to cross the river
-		else if (choiceTwo == 3) {
+		else if (choiceTwo == 3) 
+		{
 			cout << "Ima goes around the bridge guard and attempts to cross the river by himself. The river is strong, deep, and is difficult to cross. ";
 			cout << "Although Ima almost crosses the river, he gets fatigued and gets swept away, never to be heard and seen from again. The End. ";
 		}//End of choiceTwo's 3rd option
@@ -102,12 +112,14 @@ int main() {
 	}//End of choiceOne's 1st option
 
 	//If the user chooses not to accept the king's task
-	else if (choiceOne == 2) {
+	else if (choiceOne == 2)
+	{
 		cout << "The king allows you to carry on being a regular knight and Ima keeps living a normal life." << endl;
 	}//End of choiceOne's 2nd option
 
 	//If the user does not choose either of the choices
-	else {
+	else 
+	{
 		cout << "This is not a valid choice." << endl;
 	}
 
